@@ -64,10 +64,11 @@ ol {
 
   .content__list {
     position: relative;
+    overflow: auto;
     max-block-size: 298px;
     min-block-size: 298px;
-    overflow: auto;
     scrollbar-width: none;
+
     &::-webkit-scrollbar {
       display: none;
     }
@@ -229,6 +230,7 @@ ol {
     align-items: center;
     gap: 5px;
     cursor: pointer;
+
     &:has(:focus-visible) {
       outline: 1px solid #fff;
     }
