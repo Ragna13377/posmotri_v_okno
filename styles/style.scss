@@ -9,6 +9,7 @@ html {
 }
 
 .page {
+  display: flex;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -16,7 +17,6 @@ html {
   background-color: #1b1919;
   inline-size: 1200px;
   block-size: 100%;
-  display: flex;
 }
 
 h1,
@@ -78,7 +78,7 @@ ol {
     padding: 2px;
   }
 
-  .content__list-item:not(:last-child) {
+  .content__list-item:not(:first-child) {
     margin-block-start: 30px;
   }
 
@@ -139,7 +139,7 @@ ol {
   .content__video-card-thumbnail {
     background-position: center;
     background-size: cover;
-    inline-size: 192px;
+    inline-size: 197px;
     block-size: 103px;
   }
 
@@ -172,6 +172,10 @@ ol {
 
   .search-form__fieldset {
     border: none;
+
+    &:has(.search-form__checkbox-list) {
+      margin-block-end: 5px;
+    }
   }
 
   .search-form__fieldset-title {
@@ -201,7 +205,7 @@ ol {
     border: none;
     border-block-start: 1px solid #fff;
     border-block-end: 1px solid #fff;
-    padding: 5px 0;
+    //padding: 5px 0;
     color: currentColor;
     background-color: transparent;
     min-inline-size: 225px;
@@ -209,6 +213,7 @@ ol {
 
     &::placeholder {
       color: rgba(255, 255, 255, 0.70);
+      letter-spacing: -0.3px;
     }
 
     &:focus, &:focus-visible {
@@ -223,16 +228,17 @@ ol {
 
   .search-form__label {
     display: flex;
+    align-items: center;
     gap: 5px;
     cursor: pointer;
-    align-items: center;
-    padding: 2px;
+    //padding: 2px;
     &:has(:focus-visible) {
       outline: 1px solid #fff;
     }
+
     &:has(:active) {
       outline: 1px solid #fff;
-      outline-offset:  -1px;
+      outline-offset: -1px;
     }
   }
 
@@ -271,7 +277,7 @@ ol {
 }
 
 .title {
-  margin-block-end: 26px;
+  margin-block-end: 24px;
   font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
@@ -315,8 +321,4 @@ ol {
   &:active {
     background: #545050;
   }
-}
-
-.more-button {
-  margin-block-start: 30px;
 }
