@@ -9,4 +9,4 @@
 
 ## Важно!
 
-Не забыть ```npm i```
+https://github.com/Ragna13377/posmotri_v_okno
