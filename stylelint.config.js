@@ -7,7 +7,7 @@ module.exports = {
     'declaration-block-no-shorthand-property-overrides': true,
     'media-feature-name-no-unknown': true,
     'comment-no-empty': true,
-	'block-no-empty': true,
+    'block-no-empty': true,
     'no-descending-specificity': true,
     'no-duplicate-selectors': true,
     'no-invalid-position-at-import-rule': true,
@@ -27,7 +27,7 @@ module.exports = {
     'at-rule-empty-line-before': 'always',
     'selector-class-pattern': null,
     'font-family-name-quotes': 'always-where-recommended',
-	'function-calc-no-unspaced-operator': true,
-	'named-grid-areas-no-invalid': true,
+    'function-calc-no-unspaced-operator': true,
+    'named-grid-areas-no-invalid': true,
   },
 };
